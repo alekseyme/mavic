@@ -1,16 +1,34 @@
 body {
 	font-size: 15px;
+	overflow-x: hidden;
+	min-width: 320px;
+	color: #fff;
 	@include fontmain;
-	// color: #fff;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1270px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.page-section {
+	min-height: 100vh;
+	background-image: url('../img/page-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+	padding: 0 0 50px 0;
 }
 
 .title {
 	font-size: 44px;
 	line-height: 53px;
+}
+
+.scroll-btn {
+	position: absolute;
+	bottom: 30px;
+	@include hcenter;
 }
