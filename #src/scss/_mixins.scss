@@ -1,6 +1,8 @@
 @mixin fontmain {
 	font-family: 'SFProDisplay', sans-serif;
-	font-weight: 400;
+}
+@mixin fontsecondary {
+	font-family: 'Ubuntu', sans-serif;
 }
 @mixin transition {
 	transition: all .3s;
@@ -17,7 +19,7 @@
 	@font-face {
 	font-family: $font_name;
 	font-display: swap;
-	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
 	font-weight: #{$weight};
 	font-style: #{$style};
 	}

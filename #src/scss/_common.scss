@@ -3,7 +3,10 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 	color: #fff;
-	@include fontmain;
+	@include fontsecondary;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 26px;
 }
 
 .container {
@@ -23,12 +26,22 @@ body {
 }
 
 .title {
+	@include fontmain;
+	font-weight: 400;
 	font-size: 44px;
 	line-height: 53px;
+	margin-bottom: 55px;
+	padding-left: 25px;
 }
 
 .scroll-btn {
 	position: absolute;
 	bottom: 30px;
 	@include hcenter;
+}
+
+.logo {
+
+   &__img {
+   }
 }
