@@ -1,8 +1,10 @@
-@mixin fontmain {
+@mixin fontmain($weight) {
 	font-family: 'SFProDisplay', sans-serif;
+	font-weight: $weight;
 }
-@mixin fontsecondary {
+@mixin fontsecondary($weight) {
 	font-family: 'Ubuntu', sans-serif;
+	font-weight: $weight;
 }
 @mixin transition {
 	transition: all .3s;

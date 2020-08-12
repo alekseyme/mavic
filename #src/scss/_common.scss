@@ -1,10 +1,8 @@
 body {
-	font-size: 15px;
 	overflow-x: hidden;
 	min-width: 320px;
 	color: #fff;
-	@include fontsecondary;
-	font-weight: 300;
+	@include fontsecondary(300);
 	font-size: 17px;
 	line-height: 26px;
 }
@@ -22,16 +20,16 @@ body {
 	background-position: top center;
 	background-size: cover;
 	position: relative;
-	padding: 0 0 50px 0;
+	padding: 74px 0 50px 0;
 }
 
 .title {
-	@include fontmain;
-	font-weight: 400;
+	@include fontmain(400);
 	font-size: 44px;
 	line-height: 53px;
 	margin-bottom: 55px;
 	padding-left: 25px;
+	padding-top: 175px;
 }
 
 .scroll-btn {

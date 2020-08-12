@@ -152,8 +152,8 @@ function clean() {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, cssLib, gulp.parallel(js, cssbuild, html, images, fonts));
-let dev = gulp.series(clean, cssLib, gulp.parallel(js, cssdev, html, images, fonts), watcher);
+let build = gulp.series(clean, cssLib, gulp.parallel(jsLib, js, cssbuild, html, images, fonts));
+let dev = gulp.series(clean, cssLib, gulp.parallel(jsLib, js, cssdev, html, images, fonts), watcher);
 
 exports.images = images;
 exports.js = js;
