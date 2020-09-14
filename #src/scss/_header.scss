@@ -16,26 +16,6 @@
       @include fontsecondary(500);
    }
 
-   &__info {
-   }
-
-   &__btn {
-      color: #fff;
-      padding: 7px 28px;
-      outline: none;
-      background: none;
-      border: 1px solid #fff;
-      border-radius: 3px;
-      cursor: pointer;
-      text-transform: uppercase;
-      @include transition;
-
-      &:hover {
-         background-color: #fff;
-         color: $black;
-      }
-   }
-
    &__phone {
       @include fontsecondary(700);
       font-size: 16px;

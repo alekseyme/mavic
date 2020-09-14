@@ -51,12 +51,9 @@
 		}
 	}
 	&__box-title {
-		font-size: 21px;
-		line-height: 24px;
-		@include fontsecondary(700);
-		margin-bottom: 10px;
+		@include titlefont;
 	}
 	&__box-text {
-		@extend .benefits__info-text;
+		@include text-md;
 	}	
 }

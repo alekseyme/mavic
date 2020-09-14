@@ -1,0 +1,89 @@
+.contact {
+	&__inner {
+		display: flex;
+		margin-top: 56px;
+		margin-left: 56px;
+		@include text-md;
+	}
+	&__info {
+	}
+	&__info-box {
+		display: flex;
+		flex-direction: column;
+		&+& {
+			margin-top: 30px;
+		}
+	}
+	&__info-title {
+		@include titlefont;
+	}
+	&__info-phone {
+		margin-bottom: 5px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__info-email {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__form {
+		margin-left: 90px;
+		max-width: 570px;
+		width: 100%;
+	}
+	&__form-title {
+		@include titlefont;
+	}
+	&__form-text {
+		@include text-md;
+		margin-bottom: 12px;
+	}
+	&__form-line {
+		display: flex;
+	}
+	&__form-input,
+	&__form-textarea{
+		padding: 15px;
+		outline: none;
+		border: none;
+		opacity: 0.95;
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+
+		&::placeholder {
+			font-size: 13px;
+			line-height: 17px;
+			opacity: 0.4;
+			color: #fff;
+			@include fontsecondary(400);
+		}
+	}
+	&__form-input {
+		flex: 1 1 50%;
+		&+& {
+			margin-left: 10px;
+		}
+	}
+	&__form-textarea {
+		width: 100%;
+		margin-top: 10px;
+		resize: none;
+		height: 144px;
+		margin-bottom: 20px;
+	}
+	&__form-btn {
+		text-transform: uppercase;
+	}
+	&__social-list {
+		margin-left: 106px;
+	}
+	&__social-item {
+		&+& {
+			margin-top: 28px;
+		}
+	}
+	&__social-link {
+	}
+}

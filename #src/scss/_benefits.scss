@@ -87,13 +87,9 @@
 	}
 	&__info-title {
 		max-width: 123px;
-		font-size: 21px;
-		line-height: 24px;
-		@include fontsecondary(700);
-		margin-bottom: 10px;
+		@include titlefont;
 	}
 	&__info-text {
-		font-size: 15px;
-		line-height: 18px;
+		@include text-md;
 	}
 }
