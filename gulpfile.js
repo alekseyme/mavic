@@ -110,7 +110,8 @@ function js() {
 // Собираем библиотеку js
 function jsLib() {
 	return src([
-			'node_modules/slick-carousel/slick/slick.js'
+			'node_modules/slick-carousel/slick/slick.js',
+			'node_modules/fullpage.js/dist/fullpage.js'
 		])
 		.pipe(concat('lib.min.js'))
 		.pipe(uglify())

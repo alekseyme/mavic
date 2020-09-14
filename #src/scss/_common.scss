@@ -5,6 +5,8 @@ body {
 	@include fontsecondary(300);
 	font-size: 17px;
 	line-height: 26px;
+	height: 100%;
+	min-height: 100%;
 }
 
 .container {

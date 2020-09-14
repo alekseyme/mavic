@@ -1,0 +1,59 @@
+.question {
+	&__items {
+		padding-left: 25px;
+		max-width: 690px;
+	}
+	&__item {
+		background: rgba(0, 0, 0, 0.3);
+		opacity: 0.95;
+		margin-bottom: 5px;
+
+		&.question__item--active {
+			.question__item-title::before {
+				transform: rotate(180deg);
+			}
+			.question__item-text {
+				display: block;
+			}
+		}
+	}
+	&__item-title {
+		@include fontsecondary(500);
+		font-size: 21px;
+		line-height: 28px;
+		padding: 20px 90px 20px 40px;
+		cursor: pointer;
+		position: relative;
+
+		&::after,
+		&::before {
+			position: absolute;
+			height: 100%;
+			width: 70px;
+			top: 0;
+			right: -70px;
+		}
+
+		&::after {
+			content: '';
+			background-color: #fff;
+		}
+
+		&::before {
+			content: url('../img/accordion-arrow.svg');
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+			transition: 0.3s;
+
+		}
+	}
+	&__item-text {
+		display: none;
+		padding: 0 5px 75px 50px;
+		font-size: 15px;
+		line-height: 22px;
+		margin: 0;
+	}
+}

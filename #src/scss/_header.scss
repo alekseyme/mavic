@@ -51,9 +51,20 @@
 
    &__list-item {
       display: inline-block;
+      transition: 1s;
+      opacity: 0.5;
 
       & + .menu__list-item {
          margin-left: 20px;
+      }
+
+      &:hover {
+         opacity: 0.75;
+      }
+
+      &.active {
+         transform: translateY(15px) scale(1.2);
+         opacity: 1;
       }
    }
 

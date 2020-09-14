@@ -1,0 +1,62 @@
+.specs {
+	&__inner {
+		padding-left: 56px;	
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__box {
+		position: relative;
+		&:first-child {
+			margin-bottom: 140px;
+		}
+		svg {
+			position: absolute;
+			top: 0;
+		}
+		&:hover {
+			svg {
+				ellipse {
+					fill: #fff;
+				}
+			}
+		}
+	}
+	&__box-1 {
+		svg {
+			top: 12px;
+			left: 220px;
+		}
+	}
+	&__box-2 {
+		svg {
+			top: -65px;
+			left: 240px;
+		}
+	}
+	&__box-3 {
+		svg {
+			top: 12px;
+			left: -280px;
+		}
+	}
+	&__box-4 {
+		svg {
+			top: -75px;
+			left: -140px;
+		}
+	}
+	&__box-title {
+		font-size: 21px;
+		line-height: 24px;
+		@include fontsecondary(700);
+		margin-bottom: 10px;
+	}
+	&__box-text {
+		@extend .benefits__info-text;
+	}	
+}
