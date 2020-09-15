@@ -19,4 +19,10 @@ $(function () {
 		menu: '.header',
 		scrollingSpeed: 1000
 	});
+
+	//Menu-btn
+	var btn = $('.icon-menu');
+	btn.on('click', function() {
+	  $(this).toggleClass('active');
+	});
 });
